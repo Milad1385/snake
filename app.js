@@ -2,7 +2,6 @@ const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
 const scoreElem = document.querySelector(".score");
-console.log(statusElem);
 let scale = 10;
 let rows = canvas.width / scale; //=> 40
 let columns = canvas.height / scale; //=> 40
