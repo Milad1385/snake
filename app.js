@@ -2,7 +2,6 @@ const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
 const scoreElem = document.querySelector(".score");
-const statusElem = document.querySelector("#status");
 console.log(statusElem);
 let scale = 10;
 let rows = canvas.width / scale; //=> 40
@@ -38,7 +37,6 @@ function Snake() {
       ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
     }
     ctx.fillRect(this.x, this.y, scale, scale);
-    statusElem.innerHTML = 'Play game 🎮 !!!'
   };
 
   this.updateLocation = function () {
