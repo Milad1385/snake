@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Mario;
+    src: url('../fonts/SuperMario256.ttf');
+    font-display: soap;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Mario;
+    background-color: #eee;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    color: #3e3e3e;
+    font-size: 1.7rem;
+}
+
+.footer{
+    margin-top: 5rem;
+}
+
+#canvas{
+    background-color: #3e3e3e;
+    box-shadow: 0 0 5px 1px #a5a5a5;
+}
