@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake game</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="./image/snake-icon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="./image/snake-icon.png" />
+  </head>
+  <body>
     <h1>Snake Game</h1>
     <h2>Your Score : <span class="score">0</span></h2>
     <canvas width="350" height="350" id="canvas"></canvas>
+    <div class="control">
+      <button class="up btn" data-dir="Up">UP</button>
+      <div class="control-left">
+        <button class="left btn" data-dir="Left">Left</button>
+        <button class="right btn" data-dir="Right">right</button>
+      </div>
+      <button class="down btn" data-dir="Down">Down</button>
+    </div>
 
-    <h2 class="footer">Create By Milad salamian ❤ </h2>
+    <h2 class="footer">Create By Milad salamian ❤</h2>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

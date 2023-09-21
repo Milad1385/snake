@@ -1,6 +1,7 @@
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
-
+const arrowBtns = document.querySelectorAll(".btn");
+console.log(arrowBtns);
 const scoreElem = document.querySelector(".score");
 let scale = 10;
 let rows = canvas.width / scale; //=> 40
@@ -49,19 +50,19 @@ function Snake() {
 
     if (this.x > canvas.width) {
       this.resetGame();
-      alert('شما باختی !')
+      alert("شما باختی !");
       // this.x = 0;
     } else if (this.y > canvas.height) {
       this.resetGame();
-      alert('شما باختی !')
+      alert("شما باختی !");
       // this.y = 0;
     } else if (this.x < 0) {
       this.resetGame();
-      alert('شما باختی !')
+      alert("شما باختی !");
       // this.x = canvas.width;
     } else if (this.y < 0) {
       this.resetGame();
-      alert('شما باختی !')
+      alert("شما باختی !");
       // this.y = canvas.height;
     }
   };
@@ -128,5 +129,10 @@ window.addEventListener("load", () => {
   window.addEventListener("keydown", (event) => {
     let userDirection = event.code.replace("Arrow", "");
     snake.updateDirection(userDirection);
+  });
+  arrowBtns.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      snake.updateDirection(event.target.dataset.dir);
+    });
   });
 });

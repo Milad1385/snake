@@ -17,6 +17,7 @@ body{
     height: 100vh;
     font-family: Mario;
     background-color: #eee;
+    position: relative;
 }
 
 h1{
@@ -28,8 +29,37 @@ h2{
 }
 
 .footer{
-    margin-top: 5rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
 }
+
+.control{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+button {
+    font-family: Mario;
+    width: 80px;
+    padding: 0.5rem 0.5rem;
+}
+
+.right , .left{
+    background-color: #10cfff;
+}
+
+.up , .down{
+    background-color: #ffd110;
+}
+
+.control-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 
 #canvas{
     background-color: #3e3e3e;
